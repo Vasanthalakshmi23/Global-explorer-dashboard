@@ -1,0 +1,96 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg,#74ebd5,#9face6);
+    min-height:100vh;
+    padding:30px;
+}
+
+h1{
+    text-align:center;
+    color:white;
+    margin-bottom:30px;
+    font-size:40px;
+    text-shadow:2px 2px 5px rgba(0,0,0,0.3);
+}
+
+.search-box{
+    text-align:center;
+    margin-bottom:30px;
+}
+
+input{
+    width:300px;
+    padding:12px;
+    border:none;
+    border-radius:25px;
+    font-size:16px;
+    outline:none;
+}
+
+button{
+    padding:12px 20px;
+    border:none;
+    border-radius:25px;
+    background:#28a745;
+    color:white;
+    font-size:16px;
+    cursor:pointer;
+    margin-left:10px;
+    transition:0.3s;
+}
+
+button:hover{
+    background:#218838;
+    transform:scale(1.05);
+}
+
+#countries,
+#weather,
+#users{
+    background:white;
+    padding:25px;
+    margin:20px auto;
+    max-width:750px;
+    border-radius:15px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.15);
+}
+
+h2{
+    margin-bottom:15px;
+    color:#333;
+}
+
+p{
+    margin:10px 0;
+    font-size:18px;
+    color:#555;
+}
+
+img{
+    margin-top:15px;
+    border-radius:10px;
+    border:1px solid #ddd;
+}
+
+@media(max-width:768px){
+
+    input{
+        width:90%;
+        margin-bottom:10px;
+    }
+
+    button{
+        width:90%;
+        margin-left:0;
+    }
+
+    h1{
+        font-size:30px;
+    }
+}
