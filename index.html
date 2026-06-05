@@ -4,33 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>🌍 Global Explorer Dashboard</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <div class="ambient ambient-one"></div>
+    <div class="ambient ambient-two"></div>
+    <div class="ambient ambient-three"></div>
 
-    <h1>🌍 Global Explorer Dashboard</h1>
+    <main class="dashboard-shell">
+        <header class="hero-card">
+            <p class="eyebrow">Smart Global Dashboard</p>
+            <h1>🌍 Global Explorer Dashboard</h1>
+            <p class="tagline">A polished, modern interface with glowing visuals and live insights.</p>
+        </header>
 
-    <div class="search-box">
-        <input
-            type="text"
-            id="countryInput"
-            placeholder="Enter Country Name (India, Japan, USA...)"
-        >
-        <button onclick="searchCountry()">🔍 Search</button>
-    </div>
+        <section class="search-card">
+            <div class="search-box">
+                <input
+                    type="text"
+                    id="countryInput"
+                    placeholder="Enter Country Name (India, Japan, USA...)"
+                >
+                <button onclick="searchCountry()">🔍 Search</button>
+            </div>
+        </section>
 
-    <div id="countries">
-        <h2>🌐 Country Information</h2>
-        <p>Enter a country name and click Search.</p>
-    </div>
+        <section class="panel-grid">
+            <article id="countries" class="panel-card">
+                <h2>🌐 Country Information</h2>
+                <p>Enter a country name and click Search.</p>
+            </article>
 
-    <div id="weather">
-        <h2>☀️ Weather Information</h2>
-    </div>
+            <article id="weather" class="panel-card">
+                <h2>☀️ Weather Information</h2>
+            </article>
 
-    <div id="users">
-        <h2>👤 User Information</h2>
-    </div>
+            <article id="users" class="panel-card">
+                <h2>👤 User Information</h2>
+            </article>
+        </section>
+    </main>
 
     <script src="script.js"></script>
 
